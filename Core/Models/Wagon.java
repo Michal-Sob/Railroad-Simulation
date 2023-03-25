@@ -1,5 +1,5 @@
 package Core.Models;
 
-public class Wagon {
+public abstract class Wagon {
     public int WEIGHT;
 }
