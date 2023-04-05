@@ -1,5 +1,7 @@
 package Core.Models;
 
+import Core.Models.Wagons.Wagon;
+
 import java.util.List;
 
 public class Train {

@@ -1,6 +1,7 @@
 package Core.Models;
 
 import Core.Enums.PowerSupply;
+import Core.Models.Wagons.Wagon;
 
 import java.util.List;
 import java.util.Objects;
