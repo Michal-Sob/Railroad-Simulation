@@ -1,15 +1,18 @@
 package View;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import Core.Enums.Menu.BaseMenuEnum;
+import Core.Models.Menu.Menu;
+
 import java.util.Scanner;
 
 public class Main {
     public static void main(String args[]) {
         Scanner scanner = new Scanner(System.in);
+        var menu = new Menu();
 
-        System.out.println("Press \"Enter\" to exit:");
-        scanner.nextLine();
+        while (true) {
+            menu.DisplayMenu(BaseMenuEnum.class);
+            menu.HandleLogic(scanner.nextInt());
+        }
     }
 }

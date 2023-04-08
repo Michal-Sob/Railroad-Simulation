@@ -1,7 +1,9 @@
 package Core.Enums.Menu;
 
-public enum MenuDeleteEnum {
-    Invalid("Błąd"),
+import Core.Interfaces.IMenuEnum;
+
+public enum DeleteMenuEnum implements IMenuEnum {
+    Invalid("Cofnij"),
     DeleteLocomotive("Lokomotywę"),
     DeleteWagon("Wagon"),
     DeleteWagons("Wiele Wagonów"),
@@ -11,7 +13,7 @@ public enum MenuDeleteEnum {
 
     private String name;
 
-    MenuDeleteEnum(String name) {
+    DeleteMenuEnum(String name) {
         this.name = name;
     }
 

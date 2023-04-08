@@ -1,7 +1,9 @@
 package Core.Enums.Menu;
 
-public enum MenuCreateEnum {
-    Invalid("Błąd"),
+import Core.Interfaces.IMenuEnum;
+
+public enum CreateMenuEnum implements IMenuEnum {
+    Invalid("Cofnij"),
     CreateLocomotive("Lokomotywę"),
     CreateWagon("Wagon"),
     CreateWagons("Wiele Wagonów"),
@@ -11,7 +13,7 @@ public enum MenuCreateEnum {
 
     private String name;
 
-    MenuCreateEnum(String name) {
+    CreateMenuEnum(String name) {
         this.name = name;
     }
 

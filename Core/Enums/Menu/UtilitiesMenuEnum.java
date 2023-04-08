@@ -1,16 +1,18 @@
 package Core.Enums.Menu;
 
-public enum MenuUtilitiesEnum {
-    Invalid("Błąd"),
+import Core.Interfaces.IMenuEnum;
+
+public enum UtilitiesMenuEnum implements IMenuEnum {
+    Invalid("Cofnij"),
     AddWagonsToLocomotive("Dodaj wagony do lokomotywy"),
     AddPassengers("Dodaj pasażerów"),
     RemovePassengers("Usuń pasażerów"),
     AddFreight("Dodaj ładunek"),
     RemoveFreight("Usuń ładunek");
 
-    private String name;
+    private final String name;
 
-    MenuUtilitiesEnum(String name) {
+    UtilitiesMenuEnum(String name) {
         this.name = name;
     }
 

@@ -1,14 +1,16 @@
 package Core.Enums.Menu;
 
-public enum MenuBaseEnum {
-    Invalid("Błąd"),
+import Core.Interfaces.IMenuEnum;
+
+public enum BaseMenuEnum implements IMenuEnum {
+    Invalid("Zamknij"),
     Create("Utwórz"),
     Delete("Usuń"),
     Utilities("Inne");
 
     private String name;
 
-    MenuBaseEnum(String name) {
+    BaseMenuEnum(String name) {
         this.name = name;
     }
 
@@ -16,3 +18,4 @@ public enum MenuBaseEnum {
         return name;
     }
 }
+
